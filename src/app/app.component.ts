@@ -19,7 +19,8 @@ export class AppComponent {
     { title: 'Início', url: '/home', icon: 'home' },
     { title: 'Faça Contato', url: '/contacts', icon: 'chatbubbles' },
     { title: 'Sobre', url: '/about', icon: 'information-circle' },
-    { title: 'Sua Privacidade', url: '/policies', icon: 'document-lock' }
+    { title: 'Sua Privacidade', url: '/policies', icon: 'document-lock' },
+    { title: 'Cadastrar Trecos', url: '/cadastro', icon:'arrow-forward-circle'},
   ];
 
   public appUser = {

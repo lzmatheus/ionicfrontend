@@ -50,18 +50,25 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     data: { authGuardPipe: toLogin }
   },
-
   {
     path: 'policies',
     title: `${env.appName} - Sua privacidade`,
     loadChildren: () => import('./pages/policies/policies.module').then( m => m.PoliciesPageModule)
   },
   {
+    path: 'cadastro',
+    loadChildren: () => import('./pages/cadastro/cadastro.module').then( m => m.CadastroPageModule)
+  },
+  {
+    path: 'view',
+    loadChildren: () => import('./pages/view/view.module').then( m => m.ViewPageModule)
+  },
+  
+  {
     path: '**',
     redirectTo: '404',
     pathMatch: 'full'
-  }
-  
+  },
 ];
 
 @NgModule({
